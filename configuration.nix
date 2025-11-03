@@ -32,9 +32,11 @@
   # Enable networking
   networking.networkmanager = {
     enable = true;
-#    plugins = with pkgs; [  # network-manager integration for openvpn
- #     networkmanager-openvpn  
-#    ];
+    settings = {  # problem:-> wheneve i am not using internet then my os is putting the wifi on the "low power sleep mode" and the wake up of the service is very slow that's why it's keep failing and retrying whenever I search something
+      connection = { # fix: i have put the "powersave = 2" so I have completely disable my wifi to go on powersave mode.
+        "wifi.powersave" = 2;
+      };
+    };
   };
 
 
@@ -148,6 +150,7 @@ services.flatpak.enable = true;
   networkmanager
   riseup-vpn
   gnome-tweaks
+    pciutils
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
