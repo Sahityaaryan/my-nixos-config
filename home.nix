@@ -49,6 +49,8 @@
     # # environment:
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
+
+    pkgs.yarn
   ];
 
 
@@ -94,7 +96,9 @@
     # EDITOR = "emacs";
   };
 
-  
+  programs.bun.enable = true;
+  # programs.yarn.enable = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
 }
