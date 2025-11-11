@@ -51,6 +51,7 @@
     #   echo "Hello, ${config.home.username}!"
 
     pkgs.yarn
+    pkgs.nodejs
   ];
 
 
