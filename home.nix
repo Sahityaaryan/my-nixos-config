@@ -53,6 +53,7 @@
     pkgs.yarn
     pkgs.nodejs
     pkgs.unzip
+    pkgs.telegram-desktop
   ];
 
 
