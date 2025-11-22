@@ -262,8 +262,6 @@ require("lazy").setup({
     "NMAC427/guess-indent.nvim", -- Detect tabstop and shiftwidth automatically
 
     -- INSERT THE FIXES HERE:
-    **{"git@github.com:gbprod/telescope-undo.nvim.git"},**
-    **{"git@github.com:nvim-telescope/telescope-live-grep-args.nvim.git"},**
 
     -- NOTE: Plugins can also be added by using a table,
     -- with the first argument being the link and the following
@@ -1032,7 +1030,7 @@ require("lazy").setup({
 	--
 	--  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
 	-- { import = 'custom.plugins' },
-      {import = 'plugins'}, 
+      -- {import = 'plugins'}, 
 	-- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
 	-- Or use telescope!
 	-- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
