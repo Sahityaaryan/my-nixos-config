@@ -161,6 +161,8 @@ services.flatpak.enable = true;
   #   enableSSHSupport = true;
   # };
 
+  programs.ssh.startAgent = true; # ensuring ssh agent is running correctly as a user service
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
