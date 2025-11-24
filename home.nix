@@ -5,6 +5,7 @@
  # Importing configurations
   imports = [
     ./user/sh.nix
+    ./user/ghostty.nix
   ];
 
 
@@ -54,7 +55,6 @@
     pkgs.nodejs
     pkgs.unzip
     pkgs.telegram-desktop
-    pkgs.ghostty
   ];
 
 
