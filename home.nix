@@ -55,6 +55,7 @@
     pkgs.nodejs
     pkgs.unzip
     pkgs.telegram-desktop
+    pkgs.file
   ];
 
 
