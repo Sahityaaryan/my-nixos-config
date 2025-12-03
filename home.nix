@@ -1,11 +1,15 @@
-{ config, pkgs, ... }:
+{ config, pkgs, services,... }:
 
 {
 
  # Importing configurations
   imports = [
     ./user/sh.nix
-    ./user/ghostty.nix
+
+
+    # Terminals
+    ./user/terminals/ghostty/default.nix
+    ./user/terminals/wezterm/default.nix
   ];
 
 
