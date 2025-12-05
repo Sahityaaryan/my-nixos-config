@@ -60,7 +60,9 @@
     pkgs.unzip
     pkgs.telegram-desktop
     pkgs.file
-  ];
+    pkgs.lua
+
+  ]
 
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
