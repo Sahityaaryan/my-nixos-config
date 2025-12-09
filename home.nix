@@ -7,6 +7,9 @@
     ./user/sh.nix
 
 
+    # Browsers
+    ./user/browsers/luakit/default.nix
+
     # Terminals
     ./user/terminals/ghostty/default.nix
     ./user/terminals/wezterm/default.nix
@@ -35,34 +38,20 @@
     pkgs.git
     pkgs.gcc
     pkgs.wl-clipboard
-
     pkgs.stylua
     pkgs.jetbrains-mono
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
      pkgs.hello
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-
     pkgs.nerd-fonts.jetbrains-mono
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-
     pkgs.yarn
     pkgs.nodejs
     pkgs.unzip
     pkgs.telegram-desktop
     pkgs.file
-    pkgs.lua
+    pkgs.uv
+    pkgs.python3
 
-  ]
+
+  ];
 
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
