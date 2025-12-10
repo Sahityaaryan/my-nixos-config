@@ -71,6 +71,11 @@
 # Set up the network manager integration  of gnome for the openvpn
 
 
+# Making nvim the default editor
+  environment.variables = {
+    EDITOR="nvim";
+  };
+
 #environment.etc."xdg/nvim" = {
 #   source = "/etc/nixos/nvim";
 #   recursive = true;
