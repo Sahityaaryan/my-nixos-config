@@ -8,6 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
        ./system/hardware-configuration.nix
+
+
+      # Docker setup
+      ./system/docker/default.nix
     ];
 
   # Bootloader.
@@ -129,7 +133,7 @@ services.flatpak.enable = true;
   users.users.sahitya = {
     isNormalUser = true;
     description = "sahitya";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [];
   };
 
