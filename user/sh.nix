@@ -13,6 +13,8 @@ let
       go-config = "cd ~/.dotfiles";
       go-config-user = "cd ~/.dotfiles/user";
       go-config-system= "cd ~/.dotfiles/system";
+      nvi-config = "cd ~/.dotfiles && nvim .";
+      go-space = "cd ~/Desktop/my-space/";
    };
 
    in

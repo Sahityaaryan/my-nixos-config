@@ -4,6 +4,13 @@
 
  # Importing configurations
   imports = [
+
+    # low-level-config
+    ./user/low-level-config/default.nix
+
+    
+
+    # Shells
     ./user/sh.nix
 
 
@@ -35,20 +42,8 @@
   home.packages = [
 
     pkgs.neovim
-    pkgs.git
-    pkgs.gcc
-    pkgs.wl-clipboard
-    pkgs.stylua
-    pkgs.jetbrains-mono
      pkgs.hello
-    pkgs.nerd-fonts.jetbrains-mono
-    pkgs.yarn
-    pkgs.nodejs
-    pkgs.unzip
     pkgs.telegram-desktop
-    pkgs.file
-    pkgs.uv
-    pkgs.python3
 
 
   ];
