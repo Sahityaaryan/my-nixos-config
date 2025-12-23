@@ -4,9 +4,14 @@
 
  # Importing configurations
   imports = [
+    
+    # Applications
+    ./user/applications/default.nix
 
-    # low-level-config
-    ./user/low-level-config/default.nix
+
+
+    # Low-level-config
+    ./user/low-level/default.nix
 
     
 
@@ -40,11 +45,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-
-    pkgs.neovim
-     pkgs.hello
-    pkgs.telegram-desktop
-
 
   ];
 
