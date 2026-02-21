@@ -13,7 +13,7 @@
     jetbrains-mono
     nerd-fonts.jetbrains-mono
     yarn
-    nodejs
+    nodejs_24
     stylua
     
   ]; 

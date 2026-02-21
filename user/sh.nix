@@ -6,6 +6,7 @@ let
       ".." = "cd ..";
       cls = "clear";
       nv = "nvim";
+      p = "python";
       code = "codium";
       go = "cd";
       rebuild-home-manager = "cd ~/.dotfiles && home-manager switch --flake .#sahitya-nixos-user";
